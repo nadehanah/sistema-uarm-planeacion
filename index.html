@@ -81,7 +81,6 @@
 </head>
 <body class="bg-gray-100 font-sans text-gray-800 antialiased h-screen flex overflow-hidden text-sm relative">
 
-    <!-- Toast Notification -->
     <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-gray-900 text-white px-5 py-3.5 rounded-xl shadow-xl flex items-center space-x-3 text-sm no-print max-w-xs sm:max-w-md">
         <i id="toastIcon" class="fa-solid fa-circle-check text-green-400 text-lg flex-shrink-0"></i>
         <div>
@@ -90,13 +89,12 @@
         </div>
     </div>
 
-    <!-- Login Modal -->
     <div id="loginModal" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-75 backdrop-blur-sm p-4 no-print">
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6 sm:p-8 relative transform transition-all">
             <div class="text-center mb-6">
                 <div class="inline-flex items-center justify-center space-x-3 mb-2">
                     <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white flex items-center justify-center p-1 border-4 border-uarm-100 shadow-inner overflow-hidden flex-shrink-0">
-                        <img src="img/logo_ut.png" alt="Logotipo UT" class="w-full h-full object-contain">
+                        <img src="logo_ut.png" alt="Logotipo UT" class="w-full h-full object-contain">
                     </div>
                     <div class="text-left">
                         <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight leading-none">UARM</h1>
@@ -142,7 +140,6 @@
         </div>
     </div>
 
-    <!-- Recovery Modal -->
     <div id="recoveryModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-75 backdrop-blur-sm p-4 no-print">
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6 sm:p-8 relative">
             <div class="text-center mb-6">
@@ -173,7 +170,6 @@
         </div>
     </div>
 
-    <!-- New User Modal -->
     <div id="newUserModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-75 backdrop-blur-sm p-4 no-print">
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-5 sm:p-6 relative max-h-[90vh] overflow-y-auto">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
@@ -219,7 +215,6 @@
         </div>
     </div>
 
-    <!-- New Indicator Modal -->
     <div id="newIndicatorModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-75 backdrop-blur-sm p-4 no-print">
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-5 sm:p-6 relative max-h-[90vh] overflow-y-auto">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
@@ -277,19 +272,17 @@
         </div>
     </div>
 
-    <!-- Mobile Overlay -->
     <div id="sidebarOverlay" onclick="toggleMobileSidebar()" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20 hidden md:hidden transition-opacity"></div>
 
     <div id="appContainer" class="flex-1 flex w-full h-full overflow-hidden relative">
 
-        <!-- Sidebar -->
         <aside id="sidebar" class="fixed md:static inset-y-0 left-0 z-30 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out w-72 bg-uarm-800 text-emerald-100 flex flex-col justify-between shadow-xl flex-shrink-0 h-full no-print">
             <div class="p-4 sm:p-5 flex flex-col h-full justify-between overflow-y-auto">
                 <div class="flex-1 flex flex-col">
                     <div class="p-3.5 bg-uarm-700/80 flex items-center justify-between border border-uarm-600/80 rounded-2xl mb-6 shadow-sm flex-shrink-0">
                         <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center p-1 border-2 border-uarm-100 shadow-inner overflow-hidden flex-shrink-0">
-                                <img src="img/logo_ut.png" alt="Logotipo UT" class="w-full h-full object-contain">
+                                <img src="logo_ut.png" alt="Logotipo UT" class="w-full h-full object-contain">
                             </div>
                             <div class="text-left">
                                 <h1 class="text-lg sm:text-xl font-extrabold text-white tracking-tight leading-none">UARM</h1>
@@ -352,10 +345,8 @@
             </div>
         </aside>
 
-        <!-- Main Content area -->
         <main class="flex-1 flex flex-col min-w-0 bg-gray-50 overflow-y-auto h-full">
 
-            <!-- Top Header -->
             <header class="bg-white border-b border-gray-200 px-4 sm:px-8 py-3 flex items-center justify-between sticky top-0 z-10 shadow-sm flex-shrink-0 no-print gap-2">
                 <div class="flex items-center space-x-3 relative flex-1 max-w-xl">
                     <button onclick="toggleMobileSidebar()" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-1.5 rounded-lg bg-gray-100">
@@ -395,7 +386,6 @@
 
             <div class="p-4 sm:p-6 lg:p-8 flex-1 flex flex-col">
 
-                <!-- TAB: DASHBOARD -->
                 <section id="tab-dashboard" class="space-y-6 flex-1 flex flex-col justify-between">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 flex-shrink-0">
                         <div>
@@ -461,7 +451,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: USUARIOS -->
                 <section id="tab-usuarios" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 flex-shrink-0">
                         <div>
@@ -538,7 +527,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: INDICADORES -->
                 <section id="tab-indicadores" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 flex-shrink-0">
                         <div>
@@ -582,7 +570,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: CAPTURA -->
                 <section id="tab-captura" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex-shrink-0">
                         <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-gray-900">Captura de Avances y Carga Masiva</h2>
@@ -649,7 +636,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: INFORME -->
                 <section id="tab-informe" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 flex-shrink-0 acciones-exportar">
                         <div>
@@ -702,7 +688,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: REPORTES -->
                 <section id="tab-reportes" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex-shrink-0">
                         <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-gray-900">Consultas y Reportes Personalizados</h2>
@@ -774,7 +759,6 @@
                     </div>
                 </section>
 
-                <!-- TAB: CONFIGURACIÓN -->
                 <section id="tab-configuracion" class="hidden space-y-6 flex-1 flex flex-col">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 flex-shrink-0">
                         <div>
